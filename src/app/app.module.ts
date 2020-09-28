@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 
 import { CarouselComponent } from './carousel/carousel.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { LifeComponent } from './life/life.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarouselComponent
+    CarouselComponent,
+    LifeComponent
   ],
   imports: [
     BrowserModule,
