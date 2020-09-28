@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Life } from '../life';
 
 @Component({
   selector: 'app-life-details',
@@ -7,8 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LifeDetailsComponent implements OnInit {
 
-  constructor() { }
+  @Input() 
+  life: Life;
+  @Output() 
+  isComplete = new EventEmitter<boolean>();
 
+  lifeDelete(complete: boolean) {
+    this.isComplete.emit(complete);
+  }
+  upvotesNumber: number=0;
+  upvote() {
+    this.upvotesNumber++;
+
+  }
   ngOnInit(): void {
   }
 
