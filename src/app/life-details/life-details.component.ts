@@ -19,7 +19,10 @@ export class LifeDetailsComponent implements OnInit {
   upvotesNumber: number=0;
   upvote() {
     this.upvotesNumber++;
-
+  }
+  downvoteNumber: number=0
+  downvote(){
+    this.downvoteNumber--;
   }
   ngOnInit(): void {
   }
