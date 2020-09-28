@@ -9,7 +9,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 export class CarouselComponent implements OnInit {
 
   constructor() {}
-  import :[NgbModule, 
+  import :[
+    NgbModule, 
   ]
 
   ngOnInit(): void {
