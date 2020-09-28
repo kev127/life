@@ -1,0 +1,19 @@
+<div class="container">
+    <div>
+        <p>{{life.author}}</p>
+        <p>posted {{life.completeDate|dateCount}} days ago </p>
+        <button (click)= 'lifeDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+        <div class="row">
+            <div class="col-3">
+
+                <p>{{upvotesNumber}}</p>
+                <button (click)='upvote()'><i class="fa fa-thumbs-up"></i></button>
+            </div>
+
+            <div class="col-3">
+                <p>{{downvoteNumber}}</p>
+                <button (click)='downvote()'><i class="fa fa-thumbs-down"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
