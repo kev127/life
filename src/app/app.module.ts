@@ -9,6 +9,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { LifeComponent } from './life/life.component';
 import { LifeDetailsComponent } from './life-details/life-details.component';
 import { LifeFormComponent } from './life-form/life-form.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LifeFormComponent } from './life-form/life-form.component';
     CarouselComponent,
     LifeComponent,
     LifeDetailsComponent,
-    LifeFormComponent
+    LifeFormComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,

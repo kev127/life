@@ -5,7 +5,7 @@
       <div class="col-md-6">
         <div *ngFor='let life of life;let i = index' class="">
             <p class="para"><i class="fas fa-life-right"> </i> {{life.text}} <br> posted on {{life.completeDate|date|uppercase}}</p>
-            <app-life-details [life]='life' (isComplete)=deletelife($event,i)></app-life-details>
+            <app-life-details [life]='life' (isComplete)=deleteLife($event,i)></app-life-details>
         </div>  
         <div class="col-md-6">
             <app-life-form (addLife)="addNewLife($event)"></app-life-form>
