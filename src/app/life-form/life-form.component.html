@@ -3,3 +3,11 @@
     <hr>
     <form (ngSubmit)='submitlife()' #lifeForm='ngForm'>
         <div class="form-group">
+            <label for="text">Quote</label>
+            <textarea class="form-control" id="text" rows="4" [(ngModel)]="newLife.text" name="text" #text="ngModel"
+                required></textarea>
+            <div [hidden]="text.valid || text.pristine" class="alert alert-danger">
+                <p>A quote is required</p>
+            </div>
+
+        </div>
