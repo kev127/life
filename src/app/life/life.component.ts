@@ -12,6 +12,15 @@ export class LifeComponent implements OnInit {
     new Life('If life were predictable it would cease to be life, and be without flavor.','-Eleanor Roosevelt',new Date(2020,6,9), 'Peter'),
     new Life('Life is what happens when you are busy making other plans.', '-John Lennon',new Date(2020,8,6), 'John'),
   ];
+  deletelife(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.life[index].text}?`)
+
+      if (toDelete){
+        this.life.splice(index,1)
+      }
+    }
+  }
   addNewLife(life){
     let lifeLength = this.life.length;
     life.id = lifeLength+1;
