@@ -8,13 +8,15 @@ import { CarouselComponent } from './carousel/carousel.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { LifeComponent } from './life/life.component';
 import { LifeDetailsComponent } from './life-details/life-details.component';
+import { LifeFormComponent } from './life-form/life-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarouselComponent,
     LifeComponent,
-    LifeDetailsComponent
+    LifeDetailsComponent,
+    LifeFormComponent
   ],
   imports: [
     BrowserModule,
